@@ -21,7 +21,9 @@ h4 {
 
 img {
     width: 50px;
+    height: 50px;
     max-width: 100%;
+    border-radius: 50%;
 }
 
 ul {
@@ -35,6 +37,10 @@ a {
     text-decoration: none;
 }
 
+ion-icon {
+    font-size: 24px
+}
+
 /* MAIN STYLES */
 
 .header-top,
@@ -44,13 +50,42 @@ a {
     align-items: center;
 }
 
+.search-bar>input {
+    border-radius: 20px;
+    border: none;
+    background-color: var(--main-bg-color);
+    padding: 0.5rem 1rem;
+    width: 400px;
+}
+
 .search-bar,
 .user-info,
 .user-info-2,
 .header-buttons {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.username {
+    font-weight: 600;
+}
+
+div.user-info-2>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+div.user-info-2>div>p {
+    margin: 0;
+}
+
+.header-button {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--main-txt-color);
+    color: var(--accent-txt-color);
+    border-radius: 20px;
 }
 
 .logo {
@@ -74,6 +109,7 @@ a {
 .side-nav-link {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .main-content section h2 {
@@ -109,6 +145,7 @@ a {
     align-items: flex-start;
     gap: 2rem;
     padding: 1.5rem;
+    border-right: var(--main-bg-color) solid 2px;
 }
 
 .header {
@@ -116,6 +153,7 @@ a {
     display: grid;
     grid-template-rows: 1fr 1.5fr;
     padding: 1.5rem;
+    gap: 1rem;
 }
 
 .main-content {
